@@ -52,6 +52,12 @@
     <Compile Include="Cliente.Designer.cs">
       <DependentUpon>Cliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="ContenedorReservaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContenedorReservaciones.Designer.cs">
+      <DependentUpon>ContenedorReservaciones.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reservacion.cs">
       <SubType>Form</SubType>
@@ -63,6 +69,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Cliente.resx">
       <DependentUpon>Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContenedorReservaciones.resx">
+      <DependentUpon>ContenedorReservaciones.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reservacion.resx">
       <DependentUpon>Reservacion.cs</DependentUpon>

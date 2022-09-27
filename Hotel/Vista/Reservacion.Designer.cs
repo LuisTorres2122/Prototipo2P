@@ -247,6 +247,7 @@ namespace Vista
             this.dataGridView1.Size = new System.Drawing.Size(726, 185);
             this.dataGridView1.TabIndex = 27;
             this.dataGridView1.Tag = "reservacion";
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // dateTimePicker1
             // 

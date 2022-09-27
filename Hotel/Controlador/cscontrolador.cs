@@ -664,6 +664,18 @@ namespace Controlador
             return resultado;
         }
 
+        public double calculartotal(DataGridView tabla, TextBox[] tipo)
+        {
+            double dato = 0;
+
+            double sentencia = sn.preciohabitacion(tabla.Tag.ToString(), tipo[0].Tag.ToString(), tipo[0].Text);
+           
+           dato = sentencia * Convert.ToDouble( tipo[1].Text);
+
+
+
+            return dato;
+        }
 
     }
 }

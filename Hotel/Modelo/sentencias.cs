@@ -147,6 +147,22 @@ namespace Modelo
             return dato;
         }
 
+        public double preciohabitacion(string tabla, string datos, string tipo)
+        {
+            double dato = 0;
+            string sql = "select precio from habitacion  where idHabitacion = "+ tipo;
+            OdbcCommand cmd = new OdbcCommand(sql, con.conexion());
+            OdbcDataReader lr = cmd.ExecuteReader();
+            while (lr.Read())
+            {
+
+                dato = lr.GetDouble(0);
+
+
+            }
+            return dato;
+        }
+
 
     }
 }
