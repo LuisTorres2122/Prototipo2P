@@ -1,0 +1,16 @@
+C:\Users\luist\OneDrive\Universidad\8semestre\Analisis2\Prototipo2P\ejecucionMVC\ejecucionMVC\bin\Debug\ejecucionMVC.exe.config
+C:\Users\luist\OneDrive\Universidad\8semestre\Analisis2\Prototipo2P\ejecucionMVC\ejecucionMVC\bin\Debug\ejecucionMVC.exe
+C:\Users\luist\OneDrive\Universidad\8semestre\Analisis2\Prototipo2P\ejecucionMVC\ejecucionMVC\bin\Debug\ejecucionMVC.pdb
+C:\Users\luist\OneDrive\Universidad\8semestre\Analisis2\Prototipo2P\ejecucionMVC\ejecucionMVC\bin\Debug\Vista.dll
+C:\Users\luist\OneDrive\Universidad\8semestre\Analisis2\Prototipo2P\ejecucionMVC\ejecucionMVC\bin\Debug\Controlador.dll
+C:\Users\luist\OneDrive\Universidad\8semestre\Analisis2\Prototipo2P\ejecucionMVC\ejecucionMVC\bin\Debug\Modelo.dll
+C:\Users\luist\OneDrive\Universidad\8semestre\Analisis2\Prototipo2P\ejecucionMVC\ejecucionMVC\bin\Debug\Vista.pdb
+C:\Users\luist\OneDrive\Universidad\8semestre\Analisis2\Prototipo2P\ejecucionMVC\ejecucionMVC\bin\Debug\Controlador.pdb
+C:\Users\luist\OneDrive\Universidad\8semestre\Analisis2\Prototipo2P\ejecucionMVC\ejecucionMVC\bin\Debug\Modelo.pdb
+C:\Users\luist\OneDrive\Universidad\8semestre\Analisis2\Prototipo2P\ejecucionMVC\ejecucionMVC\obj\Debug\ejecucionMVC.csproj.AssemblyReference.cache
+C:\Users\luist\OneDrive\Universidad\8semestre\Analisis2\Prototipo2P\ejecucionMVC\ejecucionMVC\obj\Debug\ejecucionMVC.Properties.Resources.resources
+C:\Users\luist\OneDrive\Universidad\8semestre\Analisis2\Prototipo2P\ejecucionMVC\ejecucionMVC\obj\Debug\ejecucionMVC.csproj.GenerateResource.cache
+C:\Users\luist\OneDrive\Universidad\8semestre\Analisis2\Prototipo2P\ejecucionMVC\ejecucionMVC\obj\Debug\ejecucionMVC.csproj.CoreCompileInputs.cache
+C:\Users\luist\OneDrive\Universidad\8semestre\Analisis2\Prototipo2P\ejecucionMVC\ejecucionMVC\obj\Debug\ejecucionMVC.csproj.CopyComplete
+C:\Users\luist\OneDrive\Universidad\8semestre\Analisis2\Prototipo2P\ejecucionMVC\ejecucionMVC\obj\Debug\ejecucionMVC.exe
+C:\Users\luist\OneDrive\Universidad\8semestre\Analisis2\Prototipo2P\ejecucionMVC\ejecucionMVC\obj\Debug\ejecucionMVC.pdb
