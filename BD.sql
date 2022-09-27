@@ -136,13 +136,13 @@ create table tipoCliente(                      /*Huésped, Invitado(consumidor)*
 create table cliente(
 	Pkid varchar(15) primary key,
 	nombre varchar(30) not null,
-	idTipo varchar(15) not null,
 	apellido varchar(30) not null,
 	nit varchar(15) not null,
 	telefono varchar(15) not null,
 	direccion varchar(50) not null,
 	correo varchar(50) not null,
-	estatus varchar(1),
+	estatus varchar(1), 
+    idTipo varchar(15),
 
 foreign key (idTipo) references tipoCliente(idTipo)
 )engine=InnoDB DEFAULT CHARSET=latin1;
