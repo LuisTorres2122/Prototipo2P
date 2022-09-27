@@ -37,7 +37,7 @@ namespace Vista
 
         private void btningresar_Click(object sender, EventArgs e)
         {
-            Button[] botongc = { btnguardar, btneliminar };
+            Button[] botongc = { btnguardar, btncancelar };
             TextBox[] textbox = { textBox1, textBox2,  textBox3, textBox4, textBox5, textBox6, textBox7, textBox8, textBox9 };
             TextBox[] textboxi = { textBox1, textBox2 };
             opcion = 1;
@@ -53,7 +53,7 @@ namespace Vista
             int permiso = cn.comprobacionvacio(dataGridView1);
             if (permiso != 0)
             {
-                Button[] botongc = { btnguardar, btneliminar };
+                Button[] botongc = { btnguardar, btncancelar };
                 cn.bloquearbotonesGC(botongc, false);
             }
         }
@@ -67,14 +67,14 @@ namespace Vista
             {
                 cn.activar(this);
                 cn.enfocar(textboxi);
-                Button[] botongc = { btnguardar, btneliminar };
+                Button[] botongc = { btnguardar, btncancelar };
                 cn.bloquearbotonesGC(botongc, false);
             }
         }
 
         private void btnguardar_Click(object sender, EventArgs e)
         {
-            Button[] botongc = { btnguardar, btneliminar };
+            Button[] botongc = { btnguardar, btncancelar };
             TextBox[] textbox = { textBox1, textBox2, textBox3, textBox4, textBox5, textBox6, textBox7, textBox8, textBox9 };
             TextBox[] textboxi = { textBox1, textBox2 };
             
@@ -114,18 +114,31 @@ namespace Vista
             cn.limpiar(this);
             cn.desactivar(this);
             cn.llenartxt(textbox, dataGridView1);
-            Button[] botongc = { btnguardar, btneliminar };
+            Button[] botongc = { btnguardar, btncancelar };
             cn.bloquearbotonesGC(botongc, true);
         }
 
         private void Cliente_Load(object sender, EventArgs e)
         {
             TextBox[] textbox = { textBox1, textBox2, textBox3, textBox4, textBox5, textBox6, textBox7, textBox8, textBox9 };
-
+            Button[] botongc = { btnguardar, btncancelar };
+            cn.bloquearbotonesGC(botongc, true);
             cn.inicializargrid(dataGridView1);
             cn.llenartablainicio(dataGridView1.Tag.ToString(), dataGridView1, textbox);
            
             cn.desactivar(this);
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            TextBox[] textbox = { textBox1, textBox2, textBox3, textBox4, textBox5, textBox6, textBox7, textBox8, textBox9 };
+            cn.llenartxt(textbox,dataGridView1);
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            TextBox[] textbox = { textBox1, textBox2, textBox3, textBox4, textBox5, textBox6, textBox7, textBox8, textBox9 };
+            cn.llenartxt(textbox, dataGridView1);
         }
     }
 }

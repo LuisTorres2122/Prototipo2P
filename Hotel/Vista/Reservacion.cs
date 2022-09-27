@@ -40,7 +40,9 @@ namespace Vista
             TextBox[] textboxi = { textBox1, textBox2 };
             textBox5.Text = dateTimePicker1.Value.ToString("yyyyMMdd");
             textBox6.Text = dateTimePicker2.Value.ToString("yyyyMMdd");
-
+            TextBox[] texttotal = { textBox3, textBox4 };
+            
+            txttotal.Text = cn.calculartotal(dataGridView1, texttotal).ToString();
             if (opcion == 1)
             {
                 cn.ingresar(textbox, dataGridView1);
@@ -82,8 +84,11 @@ namespace Vista
             opcion = 1;
             cn.limpiar(this);
             cn.activar(this);
+            dateTimePicker1.Enabled = true;
+            dateTimePicker2.Enabled = true;
             cn.crearid(textboxi, dataGridView1);
             cn.bloquearbotonesGC(botongc, false);
+            
         }
 
         private void btneliminar_Click(object sender, EventArgs e)
@@ -118,6 +123,8 @@ namespace Vista
             textBox6.Text = dateTimePicker2.Value.ToString("yyyyMMdd");
             cn.limpiar(this);
             cn.desactivar(this);
+            dateTimePicker1.Enabled = false;
+            dateTimePicker2.Enabled = false;
             cn.llenartxt(textbox, dataGridView1);
             Button[] botongc = { btnguardar, btneliminar };
             cn.bloquearbotonesGC(botongc, true);
@@ -126,6 +133,12 @@ namespace Vista
         private void button4_Click(object sender, EventArgs e)
         {
             cn.llenartablaa(dataGridView1.Tag.ToString(), dataGridView1);
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            TextBox[] textbox = { textBox1, textBox2, textBox3, textBox4, textBox5, textBox6, textBox7 };
+            cn.llenartxt(textbox, dataGridView1);
         }
     }
 }

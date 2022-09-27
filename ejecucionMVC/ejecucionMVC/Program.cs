@@ -16,7 +16,7 @@ namespace ejecucionMVC
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Vista.Reservacion());
+            Application.Run(new Vista.ContenedorReservaciones());
         }
     }
 }
